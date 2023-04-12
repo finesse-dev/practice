@@ -15,8 +15,11 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={ <About/> } />
-        <Route path="/contact" element={ <Contact/> } />
-        <Route path="/contact/:id" element={<NewContact/>}/>
+        <Route path="/contact">
+          <Route index element={<Contact/>}/>
+          <Route path=":id" element={<NewContact/>}/>
+        </Route>
+        {/* <Route path="/contact/:id" element={<NewContact/>}/> */}
         <Route path="*" element={<NotFound/>}></Route>
       </Routes>
     </div>
