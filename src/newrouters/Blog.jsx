@@ -1,8 +1,12 @@
 import React from "react";
+import HeadNav from "./HeadNav";
 
 const Blog = () =>{
     return(
-        <h1>BLOG PAGE</h1>
+        <div>    
+            <HeadNav/>
+            <h1>BLOG PAGE</h1>
+        </div>
     )
 }
 
