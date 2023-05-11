@@ -7,6 +7,7 @@ import NotFound from "./routers/NotFound";
 
 import Home from "./newrouters/Home";
 import NewAbout from "./newrouters/NewAbout";
+import Blog from "./newrouters/Blog";
 function App() {
   // return (
   //   <div>
@@ -32,6 +33,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<NewAbout/>}/>
+      <Route path="/blog" element={<Blog/>}/>
     </Routes>
   )
 }
