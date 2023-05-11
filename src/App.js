@@ -6,6 +6,7 @@ import NewContact from "./routers/NewContact";
 import NotFound from "./routers/NotFound";
 
 import Home from "./newrouters/Home";
+import NewAbout from "./newrouters/NewAbout";
 function App() {
   // return (
   //   <div>
@@ -30,6 +31,7 @@ function App() {
   return(
     <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<NewAbout/>}/>
     </Routes>
   )
 }
