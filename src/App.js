@@ -8,6 +8,7 @@ import NotFound from "./routers/NotFound";
 import Home from "./newrouters/Home";
 import NewAbout from "./newrouters/NewAbout";
 import Blog from "./newrouters/Blog";
+import HukEffect from "./huks/HukEffect";
 function App() {
   // return (
   //   <div>
@@ -30,12 +31,13 @@ function App() {
   // );
 
   return(
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<NewAbout/>}/>
-      <Route path="/blog" element={<Blog/>}/>
-      <Route path="*" element={<Error/>}/>
-    </Routes>
+    // <Routes>
+    //   <Route path="/" element={<Home/>}/>
+    //   <Route path="/about" element={<NewAbout/>}/>
+    //   <Route path="/blog" element={<Blog/>}/>
+    //   <Route path="*" element={<Error/>}/>
+    // </Routes>
+    <HukEffect/>
   )
 }
 
