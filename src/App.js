@@ -9,6 +9,8 @@ import Home from "./newrouters/Home";
 import NewAbout from "./newrouters/NewAbout";
 import Blog from "./newrouters/Blog";
 import HukEffect from "./huks/HukEffect";
+import HukMemo from "./huks/HukMemo";
+import HukRef from "./huks/HukRef";
 function App() {
   // return (
   //   <div>
@@ -37,7 +39,9 @@ function App() {
     //   <Route path="/blog" element={<Blog/>}/>
     //   <Route path="*" element={<Error/>}/>
     // </Routes>
-    <HukEffect/>
+    // <HukEffect/>
+    // <HukMemo/>
+    <HukRef/>
   )
 }
 
